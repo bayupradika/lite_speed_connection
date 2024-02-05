@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+.main {
+  padding: 40px 100px;
+  height: 100vh;
+  width: 100vw;
+  background-color: #8DC4F9;
+  
+}
+.content {
+  display: flex;
+  /* border-radius: 10px; */
+  /* box-shadow: -10px -10px 20px black; */
+  box-shadow: 15px 15px 80px rgba(0, 0, 0, 0.075),
+    -15px -15px 80px rgba(0, 0, 0, 0.075);
+  height: 100%;
+  width: 100%;
+  background-color: #f0f2f5;
+}
+.left {
+  position: relative;
+  background-color: rgba(0, 132, 255, 0.432);
+  height: 100%;
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ .left img{
+  width: 70%;
+ }
+ .overlay {
+  z-index: 9999;
+  position: absolute;
+  width: 70%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 24px;
+  text-align: center;
+}
+
+.left:hover .overlay {
+  display: block;
+}
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: calc(100% - 45%);
+  background-color: rgba(0, 132, 255, 0.384);
+}
+.box {
+  /* border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px; */
+  box-shadow: 15px 15px 80px rgba(5, 5, 5, 0.121),
+    -15px -15px 80px rgba(0, 0, 0, 0.098);
+  position: relative;
+  height: 27vw;
+  width: 32vw;
+  background-color: rgba(255, 255, 255, 0.208);
+}
+form {
+  padding: 15px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.box form input {
+  background-color: #ffffff;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  font-family: sans-serif;
+  padding: 0px 20px;
+  border: 1px solid #888888ac;
+  margin-top: 1.5vw;
+  font-size: 17px;
+  height: 50px;
+  gap: 10px;
+  width: 340px;
+}
+
+  button{
+  margin-top: 1.5vw;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  color: #fff;
+  border: none;
+  background-color: #1877F2;
+  font-family: "gilroy";
+  font-size: 1.7vw;
+  padding: 10px 10.8vw;
+}
+.box p{
+  color: #1877F2;
+  margin-top: 0.8vw;
+  font-size: 1.1vw;
+}
+#new{
+  background-color: #36A420;
+    border-radius: none;
+  padding: 1vw 2vw;
+  font-size: 1.5vw;
+}
